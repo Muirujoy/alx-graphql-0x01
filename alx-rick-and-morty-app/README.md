@@ -1,14 +1,12 @@
-# ALX Rick and Morty App
+# ALX Rick and Morty App – Episode List with Pagination
 
-This project is part of the **ALX GraphQL** learning module.  
-It demonstrates how to set up a **Next.js** application using **Apollo Client** to interact with the **Rick and Morty GraphQL API**.
+This project is part of the **ALX GraphQL 0x02** module.  
+It builds on the `alx-graphql-0x01` project and adds:
+- TypeScript interfaces for structured typing
+- Episode card components
+- Paginated episode listing
 
 ---
 
-## 📂 Project Setup
+## 📂 Project Structure
 
-### 1️⃣ Create the Project
-```bash
-mkdir -p alx-graphql-0x01
-cd alx-graphql-0x01
-npx create-next-app@latest alx-rick-and-morty-app

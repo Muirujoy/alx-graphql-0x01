@@ -43,4 +43,21 @@ export default function Home() {
     fetchEpisode();
   }, []);
 
-  if (loading) return <p className="p-4">Loading...<
+  if (loading) return <p className="p-4">Loading...</p>;
+
+  return (
+    <div className="p-6 max-w-lg mx-auto">
+      <h1 className="text-2xl font-bold mb-4">Episode Details</h1>
+      {episode ? (
+        <div className="border rounded-lg p-4 shadow-md bg-white">
+          <p><strong>ID:</strong> {episode.id}</p>
+          <p><strong>Name:</strong> {episode.name}</p>
+          <p><strong>Air Date:</strong> {episode.air_date}</p>
+          <p><strong>Episode:</strong> {episode.episode}</p>
+        </div>
+      ) : (
+        <p>No episode found.</p>
+      )}
+    </div>
+  );
+}
